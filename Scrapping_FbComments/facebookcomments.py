@@ -13,7 +13,7 @@ chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument("--disable-notifications")
 
 # Set up the WebDriver
-service = Service('C:/Users/zakar/Downloads/chromedriver-win64/chromedriver.exe')
+service = Service('chromedriver-win64/chromedriver.exe') #path to the driver
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
 # login sur facebook
@@ -107,8 +107,8 @@ def parse_timestamp(timestamp):
         return "Unknown Date", "Unknown Time"
 
 # Your Facebook login credentials
-email= 'zakaria.salmi123@gmail.com'
-password = 'ZAKARIAhassaniaSALMIbarcaUI'
+email= ''
+password = ''
 
 # Facebook post URL
 # 'https://www.facebook.com/photo/?fbid=711975467637154&set=a.642603861240982'
